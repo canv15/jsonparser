@@ -1,4 +1,5 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/buger/jsonparser)](https://goreportcard.com/report/github.com/buger/jsonparser) ![License](https://img.shields.io/dub/l/vibe-d.svg)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcanv15%2Fjsonparser.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcanv15%2Fjsonparser?ref=badge_shield)
 # Alternative JSON parser for Go (so far fastest)
 
 It does not require you to know the structure of the payload (eg. create structs), and allows accessing fields by providing the path to them. It is up to **10 times faster** than standard `encoding/json` package (depending on payload size and usage), **allocates no memory**. See benchmarks below.
@@ -364,3 +365,7 @@ All my development happens using Docker, and repo include some Make tasks to sim
 * `make bench` - run benchmarks (if you need to run only single benchmark modify `BENCHMARK` variable in make file)
 * `make profile` - runs benchmark and generate 3 files-  `cpu.out`, `mem.mprof` and `benchmark.test` binary, which can be used for `go tool pprof`
 * `make bash` - enter container (i use it for running `go tool pprof` above)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcanv15%2Fjsonparser.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcanv15%2Fjsonparser?ref=badge_large)
